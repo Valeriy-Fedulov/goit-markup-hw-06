@@ -172,7 +172,7 @@ h3 {
   padding-bottom: 200px;
 
   background: rgba(47, 48, 58, 0.1);
-  border: 1px solid #000000;
+  border: 1px solid var(--blacklogo-color);
   box-sizing: border-box;
 
   max-width: 1600px;
@@ -534,7 +534,7 @@ footer {
   margin-left: 12px;
   padding: 10px 28px 10px 29px;
 
-  background: #2196f3;
+  background-color: var(--main-color);
   border: none;
   border-radius: 4px;
 
@@ -543,6 +543,8 @@ footer {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white-title-color);
+
+  cursor: pointer;
 }
 
 .subscribe-icon {
@@ -616,15 +618,104 @@ footer {
 
 .icon-close {
   fill: var(--blacklogo-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-close:hover .icon-close,
+.btn-close:focus .icon-close {
+  fill: var(--main-color);
 }
 
 .modal-title {
+  margin-bottom: 11px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  color: #212121;
+  color: var(--title-color);
 }
+
+.modal-inp {
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon {
+  position: absolute;
+  bottom: 21px;
+  left: 12px;
+  fill: var(--blacklogo-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-inp:focus + svg {
+  fill: var(--main-color);
+}
+
+.modal-inp:focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+
+.modal-area {
+  width: 100%;
+  height: 120px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  resize: none;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-area:focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+
+.modal-list {
+  position: relative;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.consent-title {
+  color: var(--main-color);
+}
+
+.modal-send {
+  display: block;
+  margin: 30px auto 0px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  padding: 10px 55px;
+
+  color: var(--white-title-color);
+  background-color: var(--main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* -------------------------------------------------------------- */
 /* Портфолио фильтр */
 .port-flex {
