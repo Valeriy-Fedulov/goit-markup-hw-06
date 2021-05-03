@@ -486,6 +486,22 @@ footer {
 }
 
 /* Подписка */
+.subscribe-position {
+  flex-grow: 1;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: flex-end;
+}
+.subscribe {
+  display: flex;
+  flex-grow: 1;
+}
+
+.subscribe-inp {
+  width: 100%;
+}
 
 .subscribe-title {
   margin-bottom: 20px;
@@ -499,6 +515,7 @@ footer {
 .subscribe-email {
   height: 50px;
   padding: 15px 16px;
+  width: 100%;
 
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -511,8 +528,12 @@ footer {
 }
 
 .subscribe-btn {
-  width: 200px;
+  display: flex;
+  flex-basis: 200px;
+  height: 50px;
+  margin-left: 12px;
   padding: 10px 28px 10px 29px;
+
   background: #2196f3;
   border: none;
   border-radius: 4px;
@@ -522,6 +543,15 @@ footer {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white-title-color);
+}
+
+.subscribe-icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon-send {
+  margin-left: 10px;
 }
 
 /* backdrop */
