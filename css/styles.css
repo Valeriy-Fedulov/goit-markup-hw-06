@@ -536,6 +536,7 @@ footer {
 
 .subscribe-btn {
   display: flex;
+  align-items: center;
   flex-basis: 200px;
   height: 50px;
   margin-left: 12px;
@@ -552,11 +553,6 @@ footer {
   color: var(--white-title-color);
 
   cursor: pointer;
-}
-
-.subscribe-icon {
-  display: flex;
-  align-items: center;
 }
 
 .icon-send {
