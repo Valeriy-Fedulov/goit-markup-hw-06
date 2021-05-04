@@ -445,7 +445,7 @@
             </div>
           </li>
           <li class="subscribe-position">
-            <form class="subscribe-form" name="subscribe" autocomplete="on">
+            <form class="subscribe-form" name="subscribe">
               <div class="subscribe">
                 <label class="subscribe-inp">
                   <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
@@ -471,6 +471,7 @@
         </ul>
       </div>
     </footer>
+    <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="btn-close" type="button" data-modal-close>
@@ -519,14 +520,18 @@
               </label>
             </li>
             <li>
-              <label>
+              <label class="check-lab">
                 <input
-                  class="visually-hidden consent"
+                  class="consent"
                   type="checkbox"
                   name="consent"
                   value=""
                 />
-                Соглашаюсь с рассылкой и принимаю
+                <svg class="consent-icon" width="16" height="16">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+                <span class="check-bord"></span>
+                Соглашаюсь с рассылкой и принимаю&ensp;
                 <a class="consent-title" href="">Условия договора</a>
               </label>
             </li>
@@ -535,6 +540,7 @@
         </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
